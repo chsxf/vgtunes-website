@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
+    font-family: "Radio Canada", sans-serif;
+    font-weight: 300;
+}
+
+body.album-page {
+    margin: 20px;
+    padding: 0;
+}
+
+.album-page #container {
+    width: 500px;
+    margin: 0px auto;
+}
+
+.album-page #cover {
+    height: 500px;
+}
+
+.album-page #infos {
+    background-color: lightgray;
+    padding: 10px 20px;
+}
+
+.album-page #infos h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.album-page #infos h2 {
+    font-weight: 500;
+    font-size: 18px;
+    color: dimgray;
+    margin: 0;
+}
+
+.album-page #links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.album-page #links li {
+    padding: 10px 20px;
+    border-top: 1px solid lightgray;
+}
+
+.album-page #links li:hover {
+    padding-left: 40px;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+}
+
+.album-page #links li.platform {
+    background-size: auto 70%;
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.album-page #links li.platform-deezer {
+    background-image: url('../images/deezer-logo.svg');
+}
+
+.album-page #links li.platform-apple_music {
+    background-image: url('../images/apple_music-logo.svg');
+}
