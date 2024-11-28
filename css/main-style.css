@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Radio+Canada:ital,wdth,wght@0,75..100,300..700;1,75..100,300..700&display=swap');
+
+* {
+    font-family: "Radio Canada", sans-serif;
+    font-weight: 300;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#main-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 50px;
+}
+
+#latest {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#latest h1 {
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+#latest .scrollview {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+#latest .flex-grid {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#latest .album {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid darkslategray;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 3px 5px;
+    cursor: pointer;
+}
+
+#latest .album:hover {
+    border-color: white;
+}
+
+#latest .album .blurry-background {
+    position: absolute;
+
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+
+    background-size: cover;
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 50%;
+}
+
+#latest .album:hover .blurry-background {
+    opacity: 100%;
+    filter: brightness(1.5), blur(20px);
+}

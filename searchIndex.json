@@ -1,0 +1,385 @@
+{
+    "artists": [
+        "ATLUS Sound Team",
+        "Adrien Larouz\u00e9e",
+        "Alexey Omelchuk",
+        "Austin Wintory",
+        "Aymeric Schwartz",
+        "Bear McCreary",
+        "Ben Prunty",
+        "Berlinist",
+        "Bobby Tahouri",
+        "Brian Tyler",
+        "Coeur de pirate",
+        "Corentin Brasart",
+        "Darren Korb",
+        "EA Games Soundtrack",
+        "Eli Rainsberry",
+        "Elmobo",
+        "Epoch",
+        "Gareth Coker",
+        "Greg Edmonson",
+        "Gustavo Santaolalla",
+        "Henry Jackman",
+        "Horizon Forbidden West",
+        "Jason Graves",
+        "Jesper Kyd",
+        "John Paesano",
+        "Joris de Man",
+        "Kenneth C M Young",
+        "Lorena \u00c0lvarez",
+        "Marcin Przyby\u0142owicz",
+        "Mark Sparling",
+        "Metro Exodus",
+        "Mick Gordon",
+        "Nobuo Uematsu",
+        "Philippe Vachey",
+        "SIE Sound Team",
+        "SQUARE ENIX MUSIC",
+        "Solar Fields",
+        "Spinozarre",
+        "Stafford Bawler",
+        "Theophany",
+        "Todd Baker",
+        "Various Artists",
+        "Zander Noriega"
+    ],
+    "albums": {
+        "pge6ftlc": {
+            "t": "Horizon Forbidden West (Original Soundtrack)",
+            "a": 22
+        },
+        "jgvd8chd": {
+            "t": "Horizon Zero Dawn (Original Soundtrack)",
+            "a": 26
+        },
+        "ehe0iddx": {
+            "t": "Crying Suns (Original Game Soundtrack)",
+            "a": 5
+        },
+        "pmrogjyx": {
+            "t": "Cyberpunk 2077 - Original Score",
+            "a": 29
+        },
+        "ssl4ivtn": {
+            "t": "Wilmot's Warehouse (Original Game Soundtrack)",
+            "a": 15
+        },
+        "mnt7w6tc": {
+            "t": "The Pathless (Original Game Soundtrack)",
+            "a": 4
+        },
+        "b64xx6ec": {
+            "t": "Journey (Original Video Game Soundtrack)",
+            "a": 4
+        },
+        "f9rfyzif": {
+            "t": "God of War Ragnar\u00f6k (Original Soundtrack)",
+            "a": 6
+        },
+        "ftnsjooh": {
+            "t": "God of War (PlayStation Soundtrack)",
+            "a": 6
+        },
+        "tpw5wky6": {
+            "t": "God of War Ragnar\u00f6k: Valhalla (Original Soundtrack)",
+            "a": 6
+        },
+        "nlkr01rn": {
+            "t": "Horizon Zero Dawn: The Frozen Wilds (Original Soundtrack)",
+            "a": 26
+        },
+        "yuymo4i5": {
+            "t": "Horizon Forbidden West: Burning Shores (Original Soundtrack)",
+            "a": 22
+        },
+        "wy333elu": {
+            "t": "Horizon Forbidden West: The Isle of Spires",
+            "a": 22
+        },
+        "xd3yih5x": {
+            "t": "Metro 2033 (Official Soundtrack)",
+            "a": 3
+        },
+        "uwyv3ves": {
+            "t": "Metro: Last Light (Official Soundtrack)",
+            "a": 3
+        },
+        "4agn4ze7": {
+            "t": "Metro Exodus Soundtrack",
+            "a": 31
+        },
+        "x8dvh320": {
+            "t": "Metro Exodus: The Two Colonels (Original Game Soundtrack)",
+            "a": 31
+        },
+        "t4c6t2l5": {
+            "t": "Sam's Story Soundtrack",
+            "a": 31
+        },
+        "wtapfgrh": {
+            "t": "Uncharted 4: A Thief's End (Original Soundtrack)",
+            "a": 21
+        },
+        "7337e9i9": {
+            "t": "Uncharted: Drake's Fortune (Original Soundtrack)",
+            "a": 19
+        },
+        "iqsrfemp": {
+            "t": "Uncharted 2: Among Thieves (Original Soundtrack)",
+            "a": 19
+        },
+        "9k9dhfbe": {
+            "t": "Uncharted 3: Drake's Deception (Original Soundtrack)",
+            "a": 19
+        },
+        "rsqvmbip": {
+            "t": "Uncharted: The Lost Legacy (Original Soundtrack)",
+            "a": 21
+        },
+        "vy2hzmfe": {
+            "t": "The Last of Us",
+            "a": 20
+        },
+        "090k9fy1": {
+            "t": "The Last of Us - Vol. 2 (Video Game Soundtrack)",
+            "a": 20
+        },
+        "uk9c0xko": {
+            "t": "The Last of Us Part II (Original Soundtrack)",
+            "a": 20
+        },
+        "eazq0adu": {
+            "t": "Kena: Bridge of Spirits, Vol. 1 (Original Game Soundtrack)",
+            "a": 40
+        },
+        "y0qxfozu": {
+            "t": "Kena: Bridge of Spirits, Vol. 2 (Original Game Soundtrack)",
+            "a": 40
+        },
+        "devoa6m9": {
+            "t": "Tomb Raider (Original Soundtrack)",
+            "a": 23
+        },
+        "nvyra6uw": {
+            "t": "Rise of the Tomb Raider (Official Soundtrack)",
+            "a": 9
+        },
+        "5qnhez2q": {
+            "t": "The Banner Saga",
+            "a": 4
+        },
+        "fox20n2w": {
+            "t": "The Banner Saga 2",
+            "a": 4
+        },
+        "yuiloo6s": {
+            "t": "The Banner Saga 3",
+            "a": 4
+        },
+        "znqshcf4": {
+            "t": "Alba: a Wildlife Adventure (Original Game Soundtrack)",
+            "a": 28
+        },
+        "cqzp84o3": {
+            "t": "Monument Valley (Original Soundtrack)",
+            "a": 39
+        },
+        "wlz1jiac": {
+            "t": "Monument Valley: Forgotten Shores (Original Game Soundtrack)",
+            "a": 39
+        },
+        "sde56yj5": {
+            "t": "Monument Valley 2 (Original Game Soundtrack)",
+            "a": 41
+        },
+        "7nmsf7ds": {
+            "t": "ASTRO BOT (Original Soundtrack)",
+            "a": 27
+        },
+        "k7bha82f": {
+            "t": "ASTRO BOT RESCUE MISSION Original Soundtrack",
+            "a": 35
+        },
+        "mlmueufn": {
+            "t": "A Short Hike",
+            "a": 30
+        },
+        "9pxotc2y": {
+            "t": "Astro's Playroom (Original Video Game Soundtrack)",
+            "a": 27
+        },
+        "0z8b887e": {
+            "t": "Doom (Original Game Soundtrack)",
+            "a": 32
+        },
+        "luzbrrsb": {
+            "t": "Simcity 3000 (Original Soundtrack)",
+            "a": 14
+        },
+        "w4mfh5rk": {
+            "t": "SimCity 4 (Original Soundtrack)",
+            "a": 14
+        },
+        "ojkkf5ng": {
+            "t": "SimCity (EA Games Soundtrack)",
+            "a": 14
+        },
+        "jsizmhxm": {
+            "t": "Paradise Killer Original Soundtrack",
+            "a": 17
+        },
+        "7lep72yh": {
+            "t": "Bastion Original Soundtrack",
+            "a": 13
+        },
+        "nvgmkaa9": {
+            "t": "Transistor Original Soundtrack",
+            "a": 13
+        },
+        "wkhxfvuw": {
+            "t": "FINAL FANTASY VII REMAKE Original Soundtrack",
+            "a": 36
+        },
+        "4gqfdtxi": {
+            "t": "FINAL FANTASY XIII-2 Original Soundtrack",
+            "a": 36
+        },
+        "m68m747m": {
+            "t": "PERSONA5 ORIGINAL SOUNDTRACK",
+            "a": 1
+        },
+        "1ltc2ft2": {
+            "t": "Gris (Original Game Soundtrack)",
+            "a": 8
+        },
+        "v17o54m9": {
+            "t": "Marvel\u2019s Spider-Man: Miles Morales (Original Video Game Soundtrack)",
+            "a": 25
+        },
+        "q6rjw1mo": {
+            "t": "Nobuo Uematsu \u00d7 Hironobu Sakaguchi Works ~ Music from FANTASIAN (Original Game Soundtrack)",
+            "a": 33
+        },
+        "piorbpon": {
+            "t": "Distant Worlds and a New World Collections: Music from Final Fantasy VII",
+            "a": 33
+        },
+        "n6vca50s": {
+            "t": "Distant Worlds V: More Music from Final Fantasy",
+            "a": 42
+        },
+        "oiz7w5tu": {
+            "t": "Marvel's Spider-Man (Original Video Game Soundtrack)",
+            "a": 25
+        },
+        "btgwi7jw": {
+            "t": "Marvel's Spider-Man 2 (Original Video Game Soundtrack)",
+            "a": 25
+        },
+        "sal3qnrd": {
+            "t": "Assassin's Creed 4: Black Flag (Original Game Soundtrack)",
+            "a": 10
+        },
+        "s792xcaf": {
+            "t": "Distant Worlds II: More Music from Final Fantasy",
+            "a": 33
+        },
+        "a8fztmao": {
+            "t": "Distant Worlds: Music from Final Fantasy",
+            "a": 33
+        },
+        "705nobed": {
+            "t": "Distant Worlds III: More Music from Final Fantasy",
+            "a": 42
+        },
+        "gwfsyzao": {
+            "t": "Distant Worlds IV: More Music from Final Fantasy",
+            "a": 42
+        },
+        "aa25xcll": {
+            "t": "Steredenn (Original Game Soundtrack)",
+            "a": 43
+        },
+        "b1qmw1co": {
+            "t": "Steredenn: Binary Stars (Original Game Soundtrack)",
+            "a": 43
+        },
+        "pabywwtv": {
+            "t": "Furi (Original Game Soundtrack)",
+            "a": 42
+        },
+        "48dlwm4l": {
+            "t": "Child Of Light",
+            "a": 11
+        },
+        "nr4pdmwc": {
+            "t": "Ori and the Blind Forest (Original Soundtrack)",
+            "a": 18
+        },
+        "95m6axa9": {
+            "t": "Assassin's Creed (Original Game Soundtrack)",
+            "a": 24
+        },
+        "okux2zb7": {
+            "t": "Assassin's Creed 2 (Original Game Soundtrack)",
+            "a": 24
+        },
+        "xjjpnz5q": {
+            "t": "Mirror's Edge (Original Videogame Score)",
+            "a": 37
+        },
+        "5fx3itpc": {
+            "t": "Assassin's Creed Brotherhood (Original Game Soundtrack)",
+            "a": 24
+        },
+        "7ur6ptiu": {
+            "t": "Assassin's Creed Revelations (The Complete Recordings) [Original Game Soundtrack]",
+            "a": 24
+        },
+        "akirbm0c": {
+            "t": "Night Call (Original Soundtrack)",
+            "a": 12
+        },
+        "vdqj1mtu": {
+            "t": "Flat Eye (Original Video Game Soundtrack)",
+            "a": 12
+        },
+        "w0gk9osc": {
+            "t": "The Operator (Original Game Soundtrack)",
+            "a": 38
+        },
+        "iar5u7k6": {
+            "t": "The Wreck (Original Video Game Soundtrack)",
+            "a": 2
+        },
+        "2m9qxblm": {
+            "t": "Double Kick Heroes, Vol. 1 (Original Game Soundtrack)",
+            "a": 16
+        },
+        "idosewno": {
+            "t": "Double Kick Heroes, Vol. 2 (Original Game Soundtrack)",
+            "a": 16
+        },
+        "gajdqbmk": {
+            "t": "FINAL FANTASY VII Original Soundtrack",
+            "a": 33
+        },
+        "67jrf55z": {
+            "t": "NieR:Automata Original Soundtrack",
+            "a": 36
+        },
+        "duysz1s8": {
+            "t": "Ftl: Faster Than Light - Original Soundtrack",
+            "a": 7
+        },
+        "pbinzgko": {
+            "t": "Little Big Adventure 2 O.S.T.",
+            "a": 34
+        },
+        "8bljp2l3": {
+            "t": "Little Big Adventure 1 O.S.T.",
+            "a": 34
+        }
+    }
+}
