@@ -14,7 +14,7 @@ html {
 
 body {
     background-color: black;
-    color: white;
+    color: lightgray;
     margin: 0;
     padding: 0;
 
@@ -25,15 +25,12 @@ body {
     bottom: 0;
 }
 
-#main-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100px;
-    bottom: 50px;
+.column {
+    width: 960px;
+    margin: 0 auto;
 }
 
-#latest {
+#main-container {
     position: absolute;
     left: 0;
     right: 0;
@@ -41,10 +38,81 @@ body {
     bottom: 0;
 }
 
+#header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    z-index: 20px;
+    background: linear-gradient(rgb(23, 40, 40), darkslategray);
+}
+
+#header .column {
+    position: relative;
+}
+
+#header .logo {
+    font-family: "Jost", sans-serif;
+    font-size: 32px;
+    line-height: 50px;
+}
+
+#header .search {
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 9px;
+    bottom: 9px;
+}
+
+#header .search .looking-glass {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 24px;
+}
+
+#header .search input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    padding: 0;
+    color: white;
+    border: 1px solid darkslategray;
+    border-radius: 5px;
+    padding-left: 32px;
+}
+
+#header .search input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+#latest {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 50px;
+}
+
 #latest h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
     font-weight: 500;
+    line-height: 50px;
     margin: 0;
     text-align: center;
+    box-shadow: black 0 5px 10px;
+    z-index: 10;
 }
 
 #latest .scrollview {
@@ -67,12 +135,11 @@ body {
 
 #latest .album {
     position: relative;
-    width: 250px;
-    height: 250px;
     border-radius: 10px;
     border: 1px solid darkslategray;
     box-shadow: rgba(0, 0, 0, 0.5) 0 3px 5px;
     cursor: pointer;
+    background-size: contain;
 }
 
 #latest .album:hover {
@@ -96,4 +163,29 @@ body {
 #latest .album:hover .blurry-background {
     opacity: 100%;
     filter: brightness(1.5), blur(20px);
+}
+
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(darkslategray, rgb(23, 40, 40));
+    box-shadow: black 0 -5px 10px;
+    z-index: 10;
+}
+
+@media screen and (min-device-width: 1001px) {
+    #latest .album {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-device-width: 1000px) {
+    #latest .album {
+        width: 150px;
+        height: 150px;
+    }
 }
