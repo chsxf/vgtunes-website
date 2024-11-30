@@ -113,6 +113,8 @@ body {
     text-align: center;
     box-shadow: black 0 5px 10px;
     z-index: 10;
+    background: linear-gradient(#222, #444);
+    border-bottom: 1px solid #666;
 }
 
 #latest .scrollview {
