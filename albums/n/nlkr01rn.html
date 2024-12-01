@@ -20,14 +20,32 @@
 			-
 			Joris de Man
 			| VGTunes</title>
+
+		<link rel="preload" href="/css/album-style.css" as="style"/>
+		<link rel="preload" href="/css/cookies-consent.css" as="style"/>
 		<link href="/css/album-style.css" rel="stylesheet"/>
+		<link href="/css/cookies-consent.css" rel="stylesheet"/>
 		<style type="text/css">
 			.with-cover-image {
 				background-image: url('https://images.vgtunes.chsxf.dev/covers/nlkr01rn/cover_500.jpg');
 			}
 		</style>
+
+		<script type="text/javascript" src="/js/analytics.js" defer></script>
 	</head>
 	<body class="album-page">
+		<div id="cookies-consent">
+	<div class="popup">
+		<p>This website uses cookies to store analytics data in your browser in a way that preserves your privacy. This way we can monitor traffic without collecting any of your personal information, not even your IP address.</p>
+		<p>However, you are free to decline our use of cookies. We will only store a cookie that reflects your choice in that case.</p>
+		<div class="buttons">
+			<a href="#" class="accept" id="accept-cookie-consent">Accept</a>
+			<a href="#" class="decline" id="decline-cookie-consent">Decline</a>
+		</div>
+	</div>
+</div>
+
+
 		<div id="back-cover" class="with-cover-image"></div>
 		<div id="container">
 			<div id="cover" class="with-cover-image"></div>
@@ -49,7 +67,9 @@
 					</div>
 		<div id="footer">
 			<div class="logo">VGTunes</div>
-			<div class="legal">Legal blabla here</div>
+			<div class="legal">VGTunes does not own any cover artwork for the soundtracks featured on the website. These cover artworks and the works they are related too remain the sole property of their registered owners.
+<a href="/cookie-settings-and-privacy-policy.html">Cookie Settings and Privacy Policy</a>
+</div>
 		</div>
 	</body>
 </html>
