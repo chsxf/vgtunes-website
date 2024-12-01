@@ -93,6 +93,74 @@ body {
     border: 1px solid white;
 }
 
+#header .search .result-dropdown {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 34px;
+    background-color: rgb(23, 40, 40);
+    z-index: 100;
+    border-radius: 5px;
+    max-height: 80vh;
+    overflow-y: scroll;
+    box-shadow: darkslategray 0 0 20px inset;
+    border: 1px solid rgb(69, 116, 116);
+    visibility: hidden;
+}
+
+#header .search .result-dropdown ul {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header .search .result-dropdown .no-result {
+    padding: 20px;
+}
+
+#header .search .result-dropdown .result {
+    position: relative;
+    height: 70px;
+    border-top: 1px solid darkslategray;
+    cursor: pointer;
+}
+
+#header .search .result-dropdown .result:first {
+    border-top: none;
+}
+
+#header .search .result-dropdown .result:hover {
+    background-color: darkslategray;
+}
+
+#header .search .result-dropdown .result img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+#header .search .result-dropdown .result .title {
+    position: absolute;
+    left: 80px;
+    right: 16px;
+    top: 16px;
+    text-wrap: nowrap;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+#header .search .result-dropdown .result .artist {
+    position: absolute;
+    left: 80px;
+    right: 16px;
+    bottom: 16px;
+    text-wrap: nowrap;
+    font-size: 80%;
+}
+
 #latest {
     position: absolute;
     left: 0;
