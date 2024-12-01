@@ -91,6 +91,15 @@ body.album-page {
     color: lightgray;
 }
 
+.album-page #footer div.legal a {
+    display: block;
+    color: lightgray;
+}
+
+.album-page #footer div.legal a:hover {
+    color: white;
+}
+
 /*
 @media (min-device-width: 501px) {
 */

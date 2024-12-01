@@ -25,6 +25,20 @@ body {
     bottom: 0;
 }
 
+.logo,
+.logo a {
+    font-family: "Jost", sans-serif;
+}
+
+a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
 #main-container {
     position: absolute;
     left: 0;
@@ -56,10 +70,6 @@ body {
 
 #header .column {
     position: relative;
-}
-
-#header .logo {
-    font-family: "Jost", sans-serif;
 }
 
 #header .search {
@@ -162,14 +172,13 @@ body {
     font-size: 80%;
 }
 
-#latest {
+#main-section {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 50px;
 }
 
-#latest h1 {
+#main-section h1 {
     position: absolute;
     left: 0;
     right: 0;
@@ -183,7 +192,7 @@ body {
     border-bottom: 1px solid #666;
 }
 
-#latest .scrollview {
+#main-section .scrollview {
     position: absolute;
     left: 0;
     right: 0;
@@ -191,7 +200,7 @@ body {
     overflow-y: scroll;
 }
 
-#latest .flex-grid {
+#main-section .flex-grid {
     padding-top: 10px;
     display: flex;
     flex-direction: row;
@@ -200,20 +209,36 @@ body {
     gap: 20px;
 }
 
-#latest .album {
+#main-section .cookie-privacy h2 {
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+#main-section .cookie-privacy a {
+    text-decoration: underline;
+}
+
+#main-section .cookie-privacy .cookie-consent-controls {
+    padding: 20px;
+    border: 1px solid darkslategray;
+    border-radius: 10px;
+}
+
+#main-section .album {
     position: relative;
     border-radius: 10px;
     border: 1px solid darkslategray;
     box-shadow: rgba(0, 0, 0, 0.5) 0 3px 5px;
     cursor: pointer;
     background-size: contain;
+    display: block;
 }
 
-#latest .album:hover {
+#main-section .album:hover {
     border-color: white;
 }
 
-#latest .album .blurry-background {
+#main-section .album .blurry-background {
     position: absolute;
 
     left: -10px;
@@ -227,7 +252,7 @@ body {
     opacity: 50%;
 }
 
-#latest .album:hover .blurry-background {
+#main-section .album:hover .blurry-background {
     opacity: 100%;
     filter: brightness(1.5), blur(20px);
 }
@@ -237,10 +262,19 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    height: 50px;
     background: linear-gradient(darkslategray, rgb(23, 40, 40));
     box-shadow: black 0 -5px 10px;
     z-index: 10;
+    font-size: 12px;
+    text-align: center;
+}
+
+#footer .column {
+    padding-top: 10px;
+}
+
+#footer a {
+    text-decoration: underline;
 }
 
 /* Desktop */
@@ -266,23 +300,28 @@ body {
         height: 50px;
     }
 
-    #latest {
+    #main-section {
         top: 50px;
+        bottom: 50px;
     }
 
-    #latest h1 {
+    #main-section h1 {
         height: 50px;
         line-height: 50px;
         font-size: 32px;
     }
 
-    #latest .scrollview {
+    #main-section .scrollview {
         top: 50px;
     }
 
-    #latest .album {
+    #main-section .album {
         width: 250px;
         height: 250px;
+    }
+
+    #footer {
+        height: 50px;
     }
 }
 
@@ -309,22 +348,27 @@ body {
         top: calc(80px - 2.5vw - 32px);
     }
 
-    #latest {
+    #main-section {
         top: 80px;
+        bottom: 70px;
     }
 
-    #latest h1 {
+    #main-section h1 {
         height: 25px;
         line-height: 25px;
         font-size: 16px;
     }
 
-    #latest .scrollview {
+    #main-section .scrollview {
         top: 25px;
     }
 
-    #latest .album {
+    #main-section .album {
         width: 150px;
         height: 150px;
+    }
+
+    #footer {
+        height: 70px;
     }
 }

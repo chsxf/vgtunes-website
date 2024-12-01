@@ -4,17 +4,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>VGTunes</title>
 		<meta name="descripton" content="Get links to your favorite video game soundtracks on Deezer, Spotify and Apple Music.">
+		<link rel="preload" href="/css/main-style.css" as="style"/>
+		<link rel="preload" href="/css/cookies-consent.css" as="style"/>
 		<link href="/css/main-style.css" rel="stylesheet"/>
-		<script type="text/javascript" src="js/home.js" defer></script>
+		<link href="/css/cookies-consent.css" rel="stylesheet"/>
 		<script type="text/javascript" src="js/search.js" defer></script>
+		<script type="text/javascript" src="js/analytics.js" defer></script>
 	</head>
 	<body>
 		<div id="main-container">
+			<div id="cookies-consent">
+	<div class="popup">
+		<p>This website uses cookies to store analytics data in your browser in a way that preserves your privacy. This way we can monitor traffic without collecting any of your personal information, not even your IP address.</p>
+		<p>However, you are free to decline our use of cookies. We will only store a cookie that reflects your choice in that case.</p>
+		<div class="buttons">
+			<a href="#" class="accept" id="accept-cookie-consent">Accept</a>
+			<a href="#" class="decline" id="decline-cookie-consent">Decline</a>
+		</div>
+	</div>
+</div>
+
+
 			<div id="search-cancel"></div>
 
 			<div id="header">
 				<div class="column">
-					<div class="logo">VGTunes</div>
+					<div class="logo">
+						<a href="/">VGTunes</a>
+					</div>
 					<div class="search">
 						<img src="images/looking-glass.svg" class="looking-glass"/>
 						<input type="text" id="search-terms" placeholder="Loading search index..." disabled/>
@@ -27,167 +44,169 @@
 				</div>
 			</div>
 
-			<div id="latest">
-				<h1>Latest Additions</h1>
+			<div id="main-section">
+				<h1>
+						Latest Additions
+				</h1>
 
-				<div class="flex-grid scrollview">
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/8bljp2l3/cover_250.jpg')" data-url="/albums/8/8bljp2l3.html" title="Little Big Adventure 1 O.S.T. - Philippe Vachey">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/8bljp2l3/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/pbinzgko/cover_250.jpg')" data-url="/albums/p/pbinzgko.html" title="Little Big Adventure 2 O.S.T. - Philippe Vachey">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/pbinzgko/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/duysz1s8/cover_250.jpg')" data-url="/albums/d/duysz1s8.html" title="Ftl: Faster Than Light - Original Soundtrack - Ben Prunty">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/duysz1s8/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/67jrf55z/cover_250.jpg')" data-url="/albums/6/67jrf55z.html" title="NieR:Automata Original Soundtrack - SQUARE ENIX MUSIC">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/67jrf55z/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/gajdqbmk/cover_250.jpg')" data-url="/albums/g/gajdqbmk.html" title="FINAL FANTASY VII Original Soundtrack - Nobuo Uematsu">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/gajdqbmk/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/idosewno/cover_250.jpg')" data-url="/albums/i/idosewno.html" title="Double Kick Heroes, Vol. 2 (Original Game Soundtrack) - Elmobo">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/idosewno/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/2m9qxblm/cover_250.jpg')" data-url="/albums/2/2m9qxblm.html" title="Double Kick Heroes, Vol. 1 (Original Game Soundtrack) - Elmobo">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/2m9qxblm/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/iar5u7k6/cover_250.jpg')" data-url="/albums/i/iar5u7k6.html" title="The Wreck (Original Video Game Soundtrack) - Adrien Larouzée">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/iar5u7k6/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/w0gk9osc/cover_250.jpg')" data-url="/albums/w/w0gk9osc.html" title="The Operator (Original Game Soundtrack) - Spinozarre">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/w0gk9osc/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/vdqj1mtu/cover_250.jpg')" data-url="/albums/v/vdqj1mtu.html" title="Flat Eye (Original Video Game Soundtrack) - Corentin Brasart">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/vdqj1mtu/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/akirbm0c/cover_250.jpg')" data-url="/albums/a/akirbm0c.html" title="Night Call (Original Soundtrack) - Corentin Brasart">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/akirbm0c/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7ur6ptiu/cover_250.jpg')" data-url="/albums/7/7ur6ptiu.html" title="Assassin&#039;s Creed Revelations (The Complete Recordings) [Original Game Soundtrack] - Jesper Kyd">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7ur6ptiu/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/5fx3itpc/cover_250.jpg')" data-url="/albums/5/5fx3itpc.html" title="Assassin&#039;s Creed Brotherhood (Original Game Soundtrack) - Jesper Kyd">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/5fx3itpc/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/xjjpnz5q/cover_250.jpg')" data-url="/albums/x/xjjpnz5q.html" title="Mirror&#039;s Edge (Original Videogame Score) - Solar Fields">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/xjjpnz5q/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/okux2zb7/cover_250.jpg')" data-url="/albums/o/okux2zb7.html" title="Assassin&#039;s Creed 2 (Original Game Soundtrack) - Jesper Kyd">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/okux2zb7/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/95m6axa9/cover_250.jpg')" data-url="/albums/9/95m6axa9.html" title="Assassin&#039;s Creed (Original Game Soundtrack) - Jesper Kyd">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/95m6axa9/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/nr4pdmwc/cover_250.jpg')" data-url="/albums/n/nr4pdmwc.html" title="Ori and the Blind Forest (Original Soundtrack) - Gareth Coker">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/nr4pdmwc/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/48dlwm4l/cover_250.jpg')" data-url="/albums/4/48dlwm4l.html" title="Child Of Light - Coeur de pirate">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/48dlwm4l/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/pabywwtv/cover_250.jpg')" data-url="/albums/p/pabywwtv.html" title="Furi (Original Game Soundtrack) - Various Artists">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/pabywwtv/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/b1qmw1co/cover_250.jpg')" data-url="/albums/b/b1qmw1co.html" title="Steredenn: Binary Stars (Original Game Soundtrack) - Zander Noriega">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/b1qmw1co/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/aa25xcll/cover_250.jpg')" data-url="/albums/a/aa25xcll.html" title="Steredenn (Original Game Soundtrack) - Zander Noriega">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/aa25xcll/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/gwfsyzao/cover_250.jpg')" data-url="/albums/g/gwfsyzao.html" title="Distant Worlds IV: More Music from Final Fantasy - Various Artists">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/gwfsyzao/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/705nobed/cover_250.jpg')" data-url="/albums/7/705nobed.html" title="Distant Worlds III: More Music from Final Fantasy - Various Artists">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/705nobed/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/a8fztmao/cover_250.jpg')" data-url="/albums/a/a8fztmao.html" title="Distant Worlds: Music from Final Fantasy - Nobuo Uematsu">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/a8fztmao/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/s792xcaf/cover_250.jpg')" data-url="/albums/s/s792xcaf.html" title="Distant Worlds II: More Music from Final Fantasy - Nobuo Uematsu">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/s792xcaf/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/sal3qnrd/cover_250.jpg')" data-url="/albums/s/sal3qnrd.html" title="Assassin&#039;s Creed 4: Black Flag (Original Game Soundtrack) - Brian Tyler">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/sal3qnrd/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/btgwi7jw/cover_250.jpg')" data-url="/albums/b/btgwi7jw.html" title="Marvel&#039;s Spider-Man 2 (Original Video Game Soundtrack) - John Paesano">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/btgwi7jw/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/oiz7w5tu/cover_250.jpg')" data-url="/albums/o/oiz7w5tu.html" title="Marvel&#039;s Spider-Man (Original Video Game Soundtrack) - John Paesano">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/oiz7w5tu/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/n6vca50s/cover_250.jpg')" data-url="/albums/n/n6vca50s.html" title="Distant Worlds V: More Music from Final Fantasy - Various Artists">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/n6vca50s/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/piorbpon/cover_250.jpg')" data-url="/albums/p/piorbpon.html" title="Distant Worlds and a New World Collections: Music from Final Fantasy VII - Nobuo Uematsu">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/piorbpon/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/q6rjw1mo/cover_250.jpg')" data-url="/albums/q/q6rjw1mo.html" title="Nobuo Uematsu × Hironobu Sakaguchi Works ~ Music from FANTASIAN (Original Game Soundtrack) - Nobuo Uematsu">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/q6rjw1mo/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/v17o54m9/cover_250.jpg')" data-url="/albums/v/v17o54m9.html" title="Marvel’s Spider-Man: Miles Morales (Original Video Game Soundtrack) - John Paesano">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/v17o54m9/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/1ltc2ft2/cover_250.jpg')" data-url="/albums/1/1ltc2ft2.html" title="Gris (Original Game Soundtrack) - Berlinist">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/1ltc2ft2/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/m68m747m/cover_250.jpg')" data-url="/albums/m/m68m747m.html" title="PERSONA5 ORIGINAL SOUNDTRACK - ATLUS Sound Team">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/m68m747m/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/4gqfdtxi/cover_250.jpg')" data-url="/albums/4/4gqfdtxi.html" title="FINAL FANTASY XIII-2 Original Soundtrack - SQUARE ENIX MUSIC">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/4gqfdtxi/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/wkhxfvuw/cover_250.jpg')" data-url="/albums/w/wkhxfvuw.html" title="FINAL FANTASY VII REMAKE Original Soundtrack - SQUARE ENIX MUSIC">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/wkhxfvuw/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/nvgmkaa9/cover_250.jpg')" data-url="/albums/n/nvgmkaa9.html" title="Transistor Original Soundtrack - Darren Korb">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/nvgmkaa9/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7lep72yh/cover_250.jpg')" data-url="/albums/7/7lep72yh.html" title="Bastion Original Soundtrack - Darren Korb">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7lep72yh/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/jsizmhxm/cover_250.jpg')" data-url="/albums/j/jsizmhxm.html" title="Paradise Killer Original Soundtrack - Epoch">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/jsizmhxm/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/ojkkf5ng/cover_250.jpg')" data-url="/albums/o/ojkkf5ng.html" title="SimCity (EA Games Soundtrack) - EA Games Soundtrack">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/ojkkf5ng/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/w4mfh5rk/cover_250.jpg')" data-url="/albums/w/w4mfh5rk.html" title="SimCity 4 (Original Soundtrack) - EA Games Soundtrack">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/w4mfh5rk/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/luzbrrsb/cover_250.jpg')" data-url="/albums/l/luzbrrsb.html" title="Simcity 3000 (Original Soundtrack) - EA Games Soundtrack">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/luzbrrsb/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/0z8b887e/cover_250.jpg')" data-url="/albums/0/0z8b887e.html" title="Doom (Original Game Soundtrack) - Mick Gordon">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/0z8b887e/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/9pxotc2y/cover_250.jpg')" data-url="/albums/9/9pxotc2y.html" title="Astro&#039;s Playroom (Original Video Game Soundtrack) - Kenneth C M Young">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/9pxotc2y/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/mlmueufn/cover_250.jpg')" data-url="/albums/m/mlmueufn.html" title="A Short Hike - Mark Sparling">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/mlmueufn/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/k7bha82f/cover_250.jpg')" data-url="/albums/k/k7bha82f.html" title="ASTRO BOT RESCUE MISSION Original Soundtrack - SIE Sound Team">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/k7bha82f/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7nmsf7ds/cover_250.jpg')" data-url="/albums/7/7nmsf7ds.html" title="ASTRO BOT (Original Soundtrack) - Kenneth C M Young">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7nmsf7ds/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/sde56yj5/cover_250.jpg')" data-url="/albums/s/sde56yj5.html" title="Monument Valley 2 (Original Game Soundtrack) - Todd Baker">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/sde56yj5/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/wlz1jiac/cover_250.jpg')" data-url="/albums/w/wlz1jiac.html" title="Monument Valley: Forgotten Shores (Original Game Soundtrack) - Stafford Bawler">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/wlz1jiac/cover_250.jpg')"></div>
-						</div>
-																	<div class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/cqzp84o3/cover_250.jpg')" data-url="/albums/c/cqzp84o3.html" title="Monument Valley (Original Soundtrack) - Stafford Bawler">
-							<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/cqzp84o3/cover_250.jpg')"></div>
-						</div>
-									</div>
+					<div class="flex-grid scrollview">
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/8bljp2l3/cover_250.jpg')" href="/albums/8/8bljp2l3.html" title="Little Big Adventure 1 O.S.T. - Philippe Vachey">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/8bljp2l3/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/pbinzgko/cover_250.jpg')" href="/albums/p/pbinzgko.html" title="Little Big Adventure 2 O.S.T. - Philippe Vachey">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/pbinzgko/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/duysz1s8/cover_250.jpg')" href="/albums/d/duysz1s8.html" title="Ftl: Faster Than Light - Original Soundtrack - Ben Prunty">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/duysz1s8/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/67jrf55z/cover_250.jpg')" href="/albums/6/67jrf55z.html" title="NieR:Automata Original Soundtrack - SQUARE ENIX MUSIC">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/67jrf55z/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/gajdqbmk/cover_250.jpg')" href="/albums/g/gajdqbmk.html" title="FINAL FANTASY VII Original Soundtrack - Nobuo Uematsu">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/gajdqbmk/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/idosewno/cover_250.jpg')" href="/albums/i/idosewno.html" title="Double Kick Heroes, Vol. 2 (Original Game Soundtrack) - Elmobo">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/idosewno/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/2m9qxblm/cover_250.jpg')" href="/albums/2/2m9qxblm.html" title="Double Kick Heroes, Vol. 1 (Original Game Soundtrack) - Elmobo">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/2m9qxblm/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/iar5u7k6/cover_250.jpg')" href="/albums/i/iar5u7k6.html" title="The Wreck (Original Video Game Soundtrack) - Adrien Larouzée">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/iar5u7k6/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/w0gk9osc/cover_250.jpg')" href="/albums/w/w0gk9osc.html" title="The Operator (Original Game Soundtrack) - Spinozarre">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/w0gk9osc/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/vdqj1mtu/cover_250.jpg')" href="/albums/v/vdqj1mtu.html" title="Flat Eye (Original Video Game Soundtrack) - Corentin Brasart">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/vdqj1mtu/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/akirbm0c/cover_250.jpg')" href="/albums/a/akirbm0c.html" title="Night Call (Original Soundtrack) - Corentin Brasart">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/akirbm0c/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7ur6ptiu/cover_250.jpg')" href="/albums/7/7ur6ptiu.html" title="Assassin&#039;s Creed Revelations (The Complete Recordings) [Original Game Soundtrack] - Jesper Kyd">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7ur6ptiu/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/5fx3itpc/cover_250.jpg')" href="/albums/5/5fx3itpc.html" title="Assassin&#039;s Creed Brotherhood (Original Game Soundtrack) - Jesper Kyd">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/5fx3itpc/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/xjjpnz5q/cover_250.jpg')" href="/albums/x/xjjpnz5q.html" title="Mirror&#039;s Edge (Original Videogame Score) - Solar Fields">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/xjjpnz5q/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/okux2zb7/cover_250.jpg')" href="/albums/o/okux2zb7.html" title="Assassin&#039;s Creed 2 (Original Game Soundtrack) - Jesper Kyd">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/okux2zb7/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/95m6axa9/cover_250.jpg')" href="/albums/9/95m6axa9.html" title="Assassin&#039;s Creed (Original Game Soundtrack) - Jesper Kyd">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/95m6axa9/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/nr4pdmwc/cover_250.jpg')" href="/albums/n/nr4pdmwc.html" title="Ori and the Blind Forest (Original Soundtrack) - Gareth Coker">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/nr4pdmwc/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/48dlwm4l/cover_250.jpg')" href="/albums/4/48dlwm4l.html" title="Child Of Light - Coeur de pirate">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/48dlwm4l/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/pabywwtv/cover_250.jpg')" href="/albums/p/pabywwtv.html" title="Furi (Original Game Soundtrack) - Various Artists">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/pabywwtv/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/b1qmw1co/cover_250.jpg')" href="/albums/b/b1qmw1co.html" title="Steredenn: Binary Stars (Original Game Soundtrack) - Zander Noriega">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/b1qmw1co/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/aa25xcll/cover_250.jpg')" href="/albums/a/aa25xcll.html" title="Steredenn (Original Game Soundtrack) - Zander Noriega">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/aa25xcll/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/gwfsyzao/cover_250.jpg')" href="/albums/g/gwfsyzao.html" title="Distant Worlds IV: More Music from Final Fantasy - Various Artists">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/gwfsyzao/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/705nobed/cover_250.jpg')" href="/albums/7/705nobed.html" title="Distant Worlds III: More Music from Final Fantasy - Various Artists">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/705nobed/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/a8fztmao/cover_250.jpg')" href="/albums/a/a8fztmao.html" title="Distant Worlds: Music from Final Fantasy - Nobuo Uematsu">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/a8fztmao/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/s792xcaf/cover_250.jpg')" href="/albums/s/s792xcaf.html" title="Distant Worlds II: More Music from Final Fantasy - Nobuo Uematsu">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/s792xcaf/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/sal3qnrd/cover_250.jpg')" href="/albums/s/sal3qnrd.html" title="Assassin&#039;s Creed 4: Black Flag (Original Game Soundtrack) - Brian Tyler">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/sal3qnrd/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/btgwi7jw/cover_250.jpg')" href="/albums/b/btgwi7jw.html" title="Marvel&#039;s Spider-Man 2 (Original Video Game Soundtrack) - John Paesano">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/btgwi7jw/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/oiz7w5tu/cover_250.jpg')" href="/albums/o/oiz7w5tu.html" title="Marvel&#039;s Spider-Man (Original Video Game Soundtrack) - John Paesano">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/oiz7w5tu/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/n6vca50s/cover_250.jpg')" href="/albums/n/n6vca50s.html" title="Distant Worlds V: More Music from Final Fantasy - Various Artists">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/n6vca50s/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/piorbpon/cover_250.jpg')" href="/albums/p/piorbpon.html" title="Distant Worlds and a New World Collections: Music from Final Fantasy VII - Nobuo Uematsu">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/piorbpon/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/q6rjw1mo/cover_250.jpg')" href="/albums/q/q6rjw1mo.html" title="Nobuo Uematsu × Hironobu Sakaguchi Works ~ Music from FANTASIAN (Original Game Soundtrack) - Nobuo Uematsu">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/q6rjw1mo/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/v17o54m9/cover_250.jpg')" href="/albums/v/v17o54m9.html" title="Marvel’s Spider-Man: Miles Morales (Original Video Game Soundtrack) - John Paesano">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/v17o54m9/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/1ltc2ft2/cover_250.jpg')" href="/albums/1/1ltc2ft2.html" title="Gris (Original Game Soundtrack) - Berlinist">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/1ltc2ft2/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/m68m747m/cover_250.jpg')" href="/albums/m/m68m747m.html" title="PERSONA5 ORIGINAL SOUNDTRACK - ATLUS Sound Team">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/m68m747m/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/4gqfdtxi/cover_250.jpg')" href="/albums/4/4gqfdtxi.html" title="FINAL FANTASY XIII-2 Original Soundtrack - SQUARE ENIX MUSIC">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/4gqfdtxi/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/wkhxfvuw/cover_250.jpg')" href="/albums/w/wkhxfvuw.html" title="FINAL FANTASY VII REMAKE Original Soundtrack - SQUARE ENIX MUSIC">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/wkhxfvuw/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/nvgmkaa9/cover_250.jpg')" href="/albums/n/nvgmkaa9.html" title="Transistor Original Soundtrack - Darren Korb">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/nvgmkaa9/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7lep72yh/cover_250.jpg')" href="/albums/7/7lep72yh.html" title="Bastion Original Soundtrack - Darren Korb">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7lep72yh/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/jsizmhxm/cover_250.jpg')" href="/albums/j/jsizmhxm.html" title="Paradise Killer Original Soundtrack - Epoch">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/jsizmhxm/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/ojkkf5ng/cover_250.jpg')" href="/albums/o/ojkkf5ng.html" title="SimCity (EA Games Soundtrack) - EA Games Soundtrack">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/ojkkf5ng/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/w4mfh5rk/cover_250.jpg')" href="/albums/w/w4mfh5rk.html" title="SimCity 4 (Original Soundtrack) - EA Games Soundtrack">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/w4mfh5rk/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/luzbrrsb/cover_250.jpg')" href="/albums/l/luzbrrsb.html" title="Simcity 3000 (Original Soundtrack) - EA Games Soundtrack">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/luzbrrsb/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/0z8b887e/cover_250.jpg')" href="/albums/0/0z8b887e.html" title="Doom (Original Game Soundtrack) - Mick Gordon">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/0z8b887e/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/9pxotc2y/cover_250.jpg')" href="/albums/9/9pxotc2y.html" title="Astro&#039;s Playroom (Original Video Game Soundtrack) - Kenneth C M Young">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/9pxotc2y/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/mlmueufn/cover_250.jpg')" href="/albums/m/mlmueufn.html" title="A Short Hike - Mark Sparling">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/mlmueufn/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/k7bha82f/cover_250.jpg')" href="/albums/k/k7bha82f.html" title="ASTRO BOT RESCUE MISSION Original Soundtrack - SIE Sound Team">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/k7bha82f/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7nmsf7ds/cover_250.jpg')" href="/albums/7/7nmsf7ds.html" title="ASTRO BOT (Original Soundtrack) - Kenneth C M Young">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/7nmsf7ds/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/sde56yj5/cover_250.jpg')" href="/albums/s/sde56yj5.html" title="Monument Valley 2 (Original Game Soundtrack) - Todd Baker">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/sde56yj5/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/wlz1jiac/cover_250.jpg')" href="/albums/w/wlz1jiac.html" title="Monument Valley: Forgotten Shores (Original Game Soundtrack) - Stafford Bawler">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/wlz1jiac/cover_250.jpg')"></div>
+			</a>
+								<a class="album" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/cqzp84o3/cover_250.jpg')" href="/albums/c/cqzp84o3.html" title="Monument Valley (Original Soundtrack) - Stafford Bawler">
+				<div class="blurry-background" style="background-image: url('https://images.vgtunes.chsxf.dev/covers/cqzp84o3/cover_250.jpg')"></div>
+			</a>
+			</div>
 			</div>
 
 			<div id="footer">
-				<div class="column">
-					Legal blabla here
-				</div>
+				<div class="column">VGTunes does not own any cover artwork for the soundtracks featured on the website. These cover artworks and the works they are related too remain the sole property of their registered owners.
+<a href="/cookie-settings-and-privacy-policy.html">Cookie Settings and Privacy Policy</a>
+</div>
 			</div>
 		</div>
 	</body>
