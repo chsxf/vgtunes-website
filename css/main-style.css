@@ -25,11 +25,6 @@ body {
     bottom: 0;
 }
 
-.column {
-    width: 960px;
-    margin: 0 auto;
-}
-
 #main-container {
     position: absolute;
     left: 0;
@@ -55,7 +50,6 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    height: 50px;
     z-index: 20px;
     background: linear-gradient(rgb(23, 40, 40), darkslategray);
 }
@@ -66,16 +60,10 @@ body {
 
 #header .logo {
     font-family: "Jost", sans-serif;
-    font-size: 32px;
-    line-height: 50px;
 }
 
 #header .search {
     position: absolute;
-    left: 200px;
-    right: 0;
-    top: 9px;
-    bottom: 9px;
     z-index: 100;
 }
 
@@ -178,7 +166,6 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 50px;
     bottom: 50px;
 }
 
@@ -187,9 +174,7 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    height: 50px;
     font-weight: 500;
-    line-height: 50px;
     margin: 0;
     text-align: center;
     box-shadow: black 0 5px 10px;
@@ -202,7 +187,6 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 50px;
     bottom: 0;
     overflow-y: scroll;
 }
@@ -259,14 +243,86 @@ body {
     z-index: 10;
 }
 
+/* Desktop */
 @media screen and (min-device-width: 1001px) {
+    #header .logo {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    #header .search {
+        left: 200px;
+        right: 0;
+        top: 9px;
+        bottom: 9px;
+    }
+
+    .column {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    #header {
+        height: 50px;
+    }
+
+    #latest {
+        top: 50px;
+    }
+
+    #latest h1 {
+        height: 50px;
+        line-height: 50px;
+        font-size: 32px;
+    }
+
+    #latest .scrollview {
+        top: 50px;
+    }
+
     #latest .album {
         width: 250px;
         height: 250px;
     }
 }
 
+/* Mobile */
 @media screen and (max-device-width: 1000px) {
+    .column {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    #header {
+        height: 80px;
+    }
+
+    #header .logo {
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    #header .search {
+        left: 0;
+        right: 0;
+        top: calc(80px - 2.5vw - 32px);
+    }
+
+    #latest {
+        top: 80px;
+    }
+
+    #latest h1 {
+        height: 25px;
+        line-height: 25px;
+        font-size: 16px;
+    }
+
+    #latest .scrollview {
+        top: 25px;
+    }
+
     #latest .album {
         width: 150px;
         height: 150px;
