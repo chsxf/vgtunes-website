@@ -25,6 +25,10 @@ body {
     bottom: 0;
 }
 
+.logo {
+    font-family: "Jost", sans-serif;
+}
+
 #main-container {
     position: absolute;
     left: 0;
@@ -56,10 +60,6 @@ body {
 
 #header .column {
     position: relative;
-}
-
-#header .logo {
-    font-family: "Jost", sans-serif;
 }
 
 #header .search {
@@ -241,6 +241,12 @@ body {
     background: linear-gradient(darkslategray, rgb(23, 40, 40));
     box-shadow: black 0 -5px 10px;
     z-index: 10;
+    font-size: 14px;
+    text-align: center;
+}
+
+#footer .column {
+    padding-top: 10px;
 }
 
 /* Desktop */

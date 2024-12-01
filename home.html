@@ -4,12 +4,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>VGTunes</title>
 		<meta name="descripton" content="Get links to your favorite video game soundtracks on Deezer, Spotify and Apple Music.">
+		<link rel="preload" href="/css/main-style.css" as="style"/>
+		<link rel="preload" href="/css/cookies-consent.css" as="style"/>
 		<link href="/css/main-style.css" rel="stylesheet"/>
+		<link href="/css/cookies-consent.css" rel="stylesheet"/>
 		<script type="text/javascript" src="js/home.js" defer></script>
 		<script type="text/javascript" src="js/search.js" defer></script>
+		<script type="text/javascript" src="js/analytics.js" defer></script>
 	</head>
 	<body>
 		<div id="main-container">
+			<div id="cookies-consent">
+	<div class="popup">
+		<p>This website uses cookies to store analytics data in your browser in a way that preserves your privacy. This way we can monitor traffic without collecting any of your personal information, not even your IP address.</p>
+		<p>However, you are free to decline our use of cookies. We will only store a cookie that reflects your choice in that case.</p>
+		<div class="buttons">
+			<a href="#" class="accept" id="accept-cookie-consent">Accept</a>
+			<a href="#" class="decline" id="decline-cookie-consent">Decline</a>
+		</div>
+	</div>
+</div>
+
+
 			<div id="search-cancel"></div>
 
 			<div id="header">
