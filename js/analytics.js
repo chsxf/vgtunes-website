@@ -93,7 +93,7 @@ function handleAnalyticsRequest() {
     entries.push([document.location.pathname, Date.now()]);
     setCookieValue(NAVIGATION_KEY, JSON.stringify(entries), "/");
 
-    // BEGIN REPLACE ANALYTICS_HOST const analyticsHost = '{ANALYTICS_HOST}';
+    // BEGIN REPLACE ANALYTICS_HOST const analyticsHost = "{ANALYTICS_HOST}";
     const analyticsHost = "http://analytics.chsxf.local:8080";
     // END REPLACE ANALYTICS_HOST
 
