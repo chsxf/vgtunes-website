@@ -93,7 +93,23 @@ function handleAnalyticsRequest() {
     entries.push([document.location.pathname, Date.now()]);
     setCookieValue(NAVIGATION_KEY, JSON.stringify(entries), "/");
 
-    // TODO: Send analytics request
+    // BEGIN REPLACE ANALYTICS_HOST
+    const analyticsHost = "http://analytics.chsxf.local:8080";
+    // END REPLACE ANALYTICS_HOST
+
+    let analyticsURL = `${analyticsHost}/Stats.add/?domain=${encodeURI(
+      document.location.hostname
+    )}&path=${encodeURI(document.location.pathname)}`;
+    if (
+      document.referrer &&
+      URL(document.referrer).hostname != document.location.hostname
+    ) {
+      analyticsURL += `&referrer=${encodeURI(document.referrer)}`;
+    }
+
+    let analyticsXMLHTTPRequest = new XMLHttpRequest();
+    analyticsXMLHTTPRequest.open("get", analyticsURL);
+    analyticsXMLHTTPRequest.send();
   }
 }
 
