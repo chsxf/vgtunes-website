@@ -75,7 +75,7 @@ function createResultNode(withSlug, inParentNode) {
 
   const li = document.createElement("li");
   li.classList.add("result");
-  li.setAttribute("data-url", `/albums/${withSlug[0]}/${withSlug}.html`);
+  li.setAttribute("data-url", `/albums/${withSlug}/`);
 
   const img = document.createElement("img");
   img.setAttribute(
