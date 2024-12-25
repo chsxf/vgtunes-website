@@ -24,6 +24,7 @@ body.album-page {
 .album-page #infos {
     background: linear-gradient(180deg, rgb(32, 32, 32), dimgray);
     color: white;
+    position: relative;
 }
 
 .album-page #links li.platform a {
@@ -153,6 +154,19 @@ body.album-page {
     font-weight: 100;
     font-size: 18px;
     margin: 0;
+    margin-right: 40px;
+}
+
+.album-page #infos .share-button {
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 32px;
+}
+
+.album-page #infos .share-button img {
+    height: 32px;
 }
 
 .album-page #links li a {
@@ -186,6 +200,22 @@ body.album-page {
 .album-page #footer div.legal {
     color: lightgray;
     font-weight: 100;
+}
+
+#copied-to-clipboard-toast {
+    position: absolute;
+    left: calc(50vw - 110px);
+    right: calc(50vw - 110px);
+    bottom: 30px;
+
+    background-color: darkslategray;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px black;
+    text-align: center;
+
+    visibility: hidden;
 }
 
 /*
