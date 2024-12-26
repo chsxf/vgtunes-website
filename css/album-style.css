@@ -157,7 +157,7 @@ body.album-page {
     margin-right: 40px;
 }
 
-.album-page #infos .share-button {
+.album-page #infos .shbtn {
     display: block;
     position: absolute;
     right: 10px;
@@ -165,7 +165,7 @@ body.album-page {
     height: 32px;
 }
 
-.album-page #infos .share-button img {
+.album-page #infos .shbtn img {
     height: 32px;
 }
 
