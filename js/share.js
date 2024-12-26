@@ -1,7 +1,7 @@
 let shareTimeout = null;
 
 function setupSharing() {
-  const shareButtons = document.getElementsByClassName("share-button");
+  const shareButtons = document.getElementsByClassName("shbtn");
   for (const shareButton of shareButtons) {
     shareButton.addEventListener("click", onShareButtonClicked);
   }
