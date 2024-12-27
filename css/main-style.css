@@ -30,6 +30,11 @@ body {
     font-family: "Jost", sans-serif;
 }
 
+.logo img {
+    width: 32px;
+    vertical-align: -10%;
+}
+
 a {
     color: lightgray;
     text-decoration: none;

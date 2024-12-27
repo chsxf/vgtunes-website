@@ -197,6 +197,11 @@ body.album-page {
     font-size: 150%;
 }
 
+.album-page #footer div.logo img {
+    width: 24px;
+    vertical-align: -10%;
+}
+
 .album-page #footer div.legal {
     color: lightgray;
     font-weight: 100;
