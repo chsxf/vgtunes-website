@@ -9,6 +9,10 @@ html {
     height: 100%;
 }
 
+body {
+    touch-action: pan-x pan-y;
+}
+
 body.album-page {
     box-sizing: border-box;
     margin: 0;
