@@ -27,6 +27,14 @@ body {
     touch-action: pan-x pan-y;
 }
 
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
 .logo,
 .logo a {
     font-family: "Jost", sans-serif;
@@ -179,6 +187,18 @@ a:hover {
     font-size: 80%;
 }
 
+#top-bar-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    box-shadow: black 0 5px 10px;
+    z-index: 10;
+    background: linear-gradient(#222, #444);
+    border-bottom: 1px solid #666;
+}
+
 #main-section {
     position: absolute;
     left: 0;
@@ -186,17 +206,12 @@ a:hover {
 }
 
 #main-section h1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
     font-weight: 500;
     margin: 0;
-    text-align: center;
-    box-shadow: black 0 5px 10px;
-    z-index: 10;
-    background: linear-gradient(#222, #444);
-    border-bottom: 1px solid #666;
+}
+
+#main-section .column {
+    position: relative;
 }
 
 #main-section .scrollview {
@@ -284,6 +299,24 @@ a:hover {
     text-decoration: underline;
 }
 
+#main-section #top-bar-container .buttons-container {
+    position: absolute;
+}
+
+#submit-album-button,
+#report-error-button {
+    border: 1px solid #666;
+    border-radius: 3px;
+    background-color: #333;
+
+    display: inline-block;
+}
+
+#submit-album-button:hover,
+#report-error-button:hover {
+    border-color: white;
+}
+
 /* Desktop */
 @media screen and (min-device-width: 1001px) {
     #header .logo {
@@ -313,9 +346,12 @@ a:hover {
     }
 
     #main-section h1 {
-        height: 50px;
         line-height: 50px;
         font-size: 32px;
+    }
+
+    #main-section h1.align-left {
+        margin-left: 40px;
     }
 
     #main-section .scrollview {
@@ -329,6 +365,19 @@ a:hover {
 
     #footer {
         height: 50px;
+    }
+
+    #main-section #top-bar-container .buttons-container {
+        right: 0;
+        top: 12px;
+    }
+
+    #submit-album-button,
+    #report-error-button {
+        line-height: 30px;
+        padding: 0 10px;
+        font-size: 14px;
+        margin-left: 10px;
     }
 }
 
@@ -361,13 +410,12 @@ a:hover {
     }
 
     #main-section h1 {
-        height: 25px;
-        line-height: 25px;
+        line-height: 40px;
         font-size: 16px;
     }
 
     #main-section .scrollview {
-        top: 25px;
+        top: 40px;
     }
 
     #main-section .album {
@@ -377,5 +425,22 @@ a:hover {
 
     #footer {
         height: 70px;
+    }
+
+    #main-section #top-bar-container .buttons-container {
+        right: 0;
+        top: 5px;
+    }
+
+    #submit-album-button {
+        line-height: 30px;
+        padding: 0 10px;
+        font-size: 14px;
+        margin-left: 10px;
+        background-color: #181818;
+    }
+
+    #report-error-button {
+        display: none;
     }
 }
