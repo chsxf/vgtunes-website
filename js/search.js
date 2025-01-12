@@ -80,7 +80,7 @@ function createResultNode(withSlug, inParentNode) {
   const img = document.createElement("img");
   img.setAttribute(
     "src",
-    `https://images.vgtunes.chsxf.dev/covers/${withSlug}/cover_100.jpg`
+    `https://images.vgtunes.chsxf.dev/covers/${withSlug}/cover_100.webp`
   );
   li.appendChild(img);
 

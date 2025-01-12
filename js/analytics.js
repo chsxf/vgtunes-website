@@ -97,9 +97,15 @@ function handleAnalyticsRequest() {
     const analyticsHost = "https://analytics.chsxf.dev";
     // END REPLACE ANALYTICS_HOST
 
+    let documentPath = document.location.pathname;
+    if (/index\.(html|php)$/.test(documentPath)) {
+      const lastIndex = documentPath.lastIndexOf("/");
+      documentPath = documentPath.substring(0, lastIndex + 1);
+    }
+
     let analyticsURL = `${analyticsHost}/Stats.add/?domain=${encodeURI(
       document.location.hostname
-    )}&path=${encodeURI(document.location.pathname)}`;
+    )}&path=${encodeURI(documentPath)}`;
     if (document.referrer) {
       let documentReferrerURL = new URL(document.referrer);
       if (documentReferrerURL.hostname != document.location.hostname) {
