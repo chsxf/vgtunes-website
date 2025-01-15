@@ -21,8 +21,8 @@
 Olivier Deriviere
 | VGTunes</title>
 
-<link rel="preload" href="/css/album-style.min.css?t=884e8e0" as="style"/>
-<link href="/css/album-style.min.css?t=884e8e0" rel="stylesheet"/>
+<link rel="preload" href="/css/album-style.min.css?t=586bb1c" as="style"/>
+<link href="/css/album-style.min.css?t=586bb1c" rel="stylesheet"/>
 <style type="text/css">.with-cover-image{background-image:url('https://images.vgtunes.chsxf.dev/covers/nv9jm95d/cover_500.webp')}</style>
 
 <script type="text/javascript" src="/js/share.min.js?t=b5a1d30" defer></script>
@@ -47,14 +47,16 @@ Olivier Deriviere
 </div>
 
 
-<div id="back-cover" class="with-cover-image"></div>
+<div id="back-cover" class="with-cover-image">
+<a href="/" class="back-button hidden">Test</a>
+</div>
 <div id="header">
 <div class="logo">
 <a href="/"><img src="/images/logo-icon-white-128px.png"/>
 VGTunes</a>
 </div>
 
-<div id="back-button" class="hidden">
+<div class="back-button hidden">
 <a href="/">&larr; Back</a>
 </div>
 </div>
@@ -96,10 +98,13 @@ const currentHost = document.location.host;
 const refererrerURL = new URL(document.referrer);
 console.log(currentHost, refererrerURL.host == currentHost);
 if (refererrerURL.host == currentHost) {
-document.getElementById('back-button').classList.remove('hidden');
+const backButtonElements = document.getElementsByClassName("back-button");
+for (let button of backButtonElements) {
+button.classList.remove("hidden");
+}
 }
 }
 })();
 </script>
 </body>
-</html></html></script></body></html></body></html>
+</html>
