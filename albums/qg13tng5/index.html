@@ -21,8 +21,8 @@
 Brad Derrick
 | VGTunes</title>
 
-<link rel="preload" href="/css/album-style.min.css?t=ce9257d" as="style"/>
-<link href="/css/album-style.min.css?t=ce9257d" rel="stylesheet"/>
+<link rel="preload" href="/css/album-style.min.css?t=884e8e0" as="style"/>
+<link href="/css/album-style.min.css?t=884e8e0" rel="stylesheet"/>
 <style type="text/css">.with-cover-image{background-image:url('https://images.vgtunes.chsxf.dev/covers/qg13tng5/cover_500.webp')}</style>
 
 <script type="text/javascript" src="/js/share.min.js?t=b5a1d30" defer></script>
@@ -48,6 +48,17 @@ Brad Derrick
 
 
 <div id="back-cover" class="with-cover-image"></div>
+<div id="header">
+<div class="logo">
+<a href="/"><img src="/images/logo-icon-white-128px.png"/>
+VGTunes</a>
+</div>
+
+<div id="back-button" class="hidden">
+<a href="/">&larr; Back</a>
+</div>
+</div>
+
 <div id="container">
 <div id="cover" class="with-cover-image"></div>
 <div id="infos">
@@ -77,5 +88,18 @@ VGTunes</div>
 </div>
 
 <div id="copied-to-clipboard-toast">Link copied to clipboard.</div>
+
+<script type="text/javascript">
+(function () {
+if (document.referrer) {
+const currentHost = document.location.host;
+const refererrerURL = new URL(document.referrer);
+console.log(currentHost, refererrerURL.host == currentHost);
+if (refererrerURL.host == currentHost) {
+document.getElementById('back-button').classList.remove('hidden');
+}
+}
+})();
+</script>
 </body>
-</html>
+</html></html></script></body></html></body></html>
