@@ -114,7 +114,7 @@ function onSearchCancelClicked(e) {
 }
 
 function setupSearch() {
-  searchIndexRequest.open("get", "/searchIndex.json");
+  searchIndexRequest.open("get", "/searchIndex.json?t=" + Date.now());
   searchIndexRequest.send();
 
   const searchCancel = document.getElementById("search-cancel");
