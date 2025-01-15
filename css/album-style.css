@@ -13,6 +13,10 @@ body {
     touch-action: pan-x pan-y;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 body.album-page {
     box-sizing: border-box;
     margin: 0;
@@ -91,11 +95,6 @@ body.album-page {
     transition-timing-function: ease-out;
 }
 
-.album-page #footer div.logo {
-    font-family: "Jost";
-    color: lightgray;
-}
-
 .album-page #footer div.legal a {
     display: block;
     color: lightgray;
@@ -110,6 +109,7 @@ body.album-page {
 */
 body.album-page {
     padding: 20px;
+    padding-top: 10px;
 }
 
 .album-page #back-cover {
@@ -183,6 +183,52 @@ body.album-page {
     border-radius: 0 0 10px 10px;
 }
 
+.album-page #header {
+    position: relative;
+    box-sizing: border-box;
+    width: calc(100vw - 100px);
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 5px;
+    color: white;
+    line-height: 48px;
+}
+
+.album-page #header a {
+    color: white;
+    text-decoration: none;
+}
+
+.album-page #header a:hover {
+    text-decoration: underline;
+}
+
+.album-page #header div.logo * {
+    font-size: 150%;
+    font-family: "Jost";
+}
+
+.album-page #header div.logo a {
+    text-decoration: none;
+}
+
+.album-page #header div.logo img {
+    width: 24px;
+    vertical-align: -10%;
+}
+
+.album-page #header div#back-button {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.album-page #header div#back-button a {
+    font-weight: bold;
+}
+
 .album-page #footer {
     box-sizing: border-box;
     width: calc(100vw - 100px);
@@ -192,18 +238,20 @@ body.album-page {
     padding-top: 50px;
 }
 
-.album-page #footer div {
-    font-size: 75%;
-    text-align: center;
-}
-
 .album-page #footer div.logo {
     font-size: 150%;
+    font-family: "Jost";
+    color: lightgray;
 }
 
 .album-page #footer div.logo img {
     width: 24px;
     vertical-align: -10%;
+}
+
+.album-page #footer div {
+    font-size: 75%;
+    text-align: center;
 }
 
 .album-page #footer div.legal {
