@@ -125,8 +125,16 @@ body.album-page {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
 
-    z-index: -1;
+.album-page #back-cover a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    display: block;
 }
 
 .album-page #container {
@@ -219,13 +227,13 @@ body.album-page {
     vertical-align: -10%;
 }
 
-.album-page #header div#back-button {
+.album-page #header div.back-button {
     position: absolute;
     right: 10px;
     top: 0;
 }
 
-.album-page #header div#back-button a {
+.album-page #header div.back-button a {
     font-weight: bold;
 }
 
