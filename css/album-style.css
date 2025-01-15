@@ -125,6 +125,8 @@ body.album-page {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    z-index: -1;
 }
 
 .album-page #back-cover a {
