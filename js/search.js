@@ -3,6 +3,8 @@ searchIndexRequest.addEventListener("load", onSearchIndexLoaded);
 
 let searchIndex = null;
 
+let searchTimeout = null;
+
 function onSearchIndexLoaded() {
   searchIndex = JSON.parse(searchIndexRequest.responseText);
   let searchField = document.getElementById("search-terms");
@@ -15,16 +17,37 @@ function onSearchInput(e) {
   e.preventDefault();
   e.stopPropagation();
 
+  if (searchTimeout !== null) {
+    clearTimeout(searchTimeout);
+  }
+  searchTimeout = setTimeout(
+    refreshSearch,
+    300,
+    this.value.toLowerCase().trim()
+  );
+}
+
+function refreshSearch(searchTerm) {
   let foundSlugs = [];
 
-  const searchTerm = this.value.toLowerCase().trim();
   if (searchTerm.length > 0) {
+    let matchingArtists = [];
+    for (let i = 0; i < searchIndex.artists.length; i++) {
+      if (searchIndex.artists[i].toLowerCase().indexOf(searchTerm) >= 0) {
+        matchingArtists.push(i);
+      }
+    }
+
     for (var albumSlug in searchIndex.albums) {
       let album = searchIndex.albums[albumSlug];
-      if (album.t.toLowerCase().indexOf(searchTerm) >= 0) {
+      if (
+        album.t.toLowerCase().indexOf(searchTerm) >= 0 ||
+        matchingArtists.indexOf(album.a) >= 0
+      ) {
         foundSlugs.push(albumSlug);
       }
     }
+
     updateSearchResults(foundSlugs);
   } else {
     hideSearch(false);
