@@ -268,7 +268,7 @@ body.album-page {
   visibility: hidden;
 }
 
-@media (min-device-width: 501px) {
+@media (min-device-width: 1001px) {
   .album-page #links li {
     border-top: 1px solid gray;
     display: block;
@@ -344,6 +344,9 @@ body.album-page {
     border-left-width: 5px;
     border-left-style: solid;
   }
+  .album-page #links li a.platform-regular-link {
+    display: none;
+  }
   .album-page #links li a.platform-web-link {
     width: 40%;
   }
@@ -361,11 +364,14 @@ body.album-page {
   .album-page #links li:last-child a.platform-web-link {
     border-radius: 0 0 0 10px;
   }
+  .album-page #links li:last-child div.veil {
+    border-radius: 0 0 10px 10px;
+  }
   .album-page #links li:last-child div.logo {
     border-radius: 0 0 10px 10px;
   }
 }
-@media (max-device-width: 500px) {
+@media (max-device-width: 1000px) {
   .album-page #links li {
     border-top: 1px solid gray;
     display: block;
@@ -429,6 +435,15 @@ body.album-page {
     border-bottom-width: 1px;
     border-bottom-style: solid;
   }
+  .album-page #links li a.platform-regular-link {
+    border-bottom: none;
+  }
+  .album-page #links li a.platform-web-link {
+    display: none;
+  }
+  .album-page #links li a.platform-app-link {
+    display: none;
+  }
   .album-page #links li a:hover {
     background-color: rgba(255, 255, 255, 0.6);
     transition-duration: 100ms;
@@ -442,6 +457,9 @@ body.album-page {
   }
   .album-page #links li:last-child a.platform-web-link {
     border-radius: 0 0 0 10px;
+  }
+  .album-page #links li:last-child div.veil {
+    border-radius: 0 0 10px 10px;
   }
   .album-page #links li:last-child div.logo {
     border-radius: 0 0 10px 10px;
