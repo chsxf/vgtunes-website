@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025.1.5] - 2025/01/26
+
+### Added
+
+- "Open in app" links on album pages
+
 ## [2025.1.4] - 2025/01/26
 
 ### Added

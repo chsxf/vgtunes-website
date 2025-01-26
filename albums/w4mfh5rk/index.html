@@ -21,11 +21,12 @@
 EA Games Soundtrack
 | VGTunes</title>
 
-<link rel="preload" href="/css/album-style.min.css?t=1292166" as="style"/>
-<link href="/css/album-style.min.css?t=1292166" rel="stylesheet"/>
+<link rel="preload" href="/css/album-style.min.css?t=8231d05" as="style"/>
+<link href="/css/album-style.min.css?t=8231d05" rel="stylesheet"/>
 <style type="text/css">.with-cover-image{background-image:url('https://images.vgtunes.chsxf.dev/covers/w4mfh5rk/cover_500.webp')}</style>
 
 <script type="text/javascript" src="/js/share.min.js?t=b5a1d30" defer></script>
+<script type="text/javascript" src="/js/album.min.js?t=8231d05" defer></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="icon" href="/images/favicon.png"/>
@@ -71,13 +72,22 @@ VGTunes</a>
 </div>
 <ul id="links">
 <li class="platform platform-apple_music">
-<a href="https://geo.music.apple.com/us/album/1497387574">Listen</a>
+<div class="veil"></div>
+<a href="https://geo.music.apple.com/album/1497387574" target="_blank" class="platform-web-link">Listen on the web &gt;</a>
+<a href="music://music.apple.com/album/1497387574" class="platform-app-link">Open in app &gt;</a>
+<div class="logo"></div>
 </li>
 <li class="platform platform-deezer">
-<a href="https://www.deezer.com/album/129678972">Listen</a>
+<div class="veil"></div>
+<a href="https://www.deezer.com/album/129678972" target="_blank" class="platform-web-link">Listen on the web &gt;</a>
+<a href="deezer://album/129678972" class="platform-app-link">Open in app &gt;</a>
+<div class="logo"></div>
 </li>
 <li class="platform platform-spotify">
-<a href="https://open.spotify.com/album/6rfFxDdAyBumxZpT6lJDsO">Listen</a>
+<div class="veil"></div>
+<a href="https://open.spotify.com/album/6rfFxDdAyBumxZpT6lJDsO" target="_blank" class="platform-web-link">Listen on the web &gt;</a>
+<a href="spotify://album/6rfFxDdAyBumxZpT6lJDsO" class="platform-app-link">Open in app &gt;</a>
+<div class="logo"></div>
 </li>
 </ul>
 </div>
@@ -90,21 +100,5 @@ VGTunes</div>
 </div>
 
 <div id="copied-to-clipboard-toast">Link copied to clipboard.</div>
-
-<script type="text/javascript">
-(function () {
-if (document.referrer) {
-const currentHost = document.location.host;
-const refererrerURL = new URL(document.referrer);
-console.log(currentHost, refererrerURL.host == currentHost);
-if (refererrerURL.host == currentHost) {
-const backButtonElements = document.getElementsByClassName("back-button");
-for (let button of backButtonElements) {
-button.classList.remove("hidden");
-}
-}
-}
-})();
-</script>
 </body>
 </html>
