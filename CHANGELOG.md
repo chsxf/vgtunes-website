@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025.2.1] - 2025/02/01
+
+### Changed
+
+- Refactor the navigation tracking through localStorage instead of cookies
+
+### Added
+
+- 19 new album references (733 total)
+
 ## [2025.1.5] - 2025/01/26
 
 ### Added
