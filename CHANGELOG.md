@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025.2.2] - 2025/02/02
+
+### Added
+
+- Bandcamp link support
+
 ## [2025.2.1] - 2025/02/01
 
 ### Changed
