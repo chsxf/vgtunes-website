@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Custom 404 page
+
 ## [2025.2.2] - 2025/02/02
 
 ### Added
