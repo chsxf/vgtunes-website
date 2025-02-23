@@ -7,8 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025.2.3] - 2025/02/23
+
+### Changed
+
+- New home page layout
+
 ### Added
 
+- 77 new album references (810 total)
+- Album and artist catalog pages
+- Artist pages
+- Apple touch icon to allow for custom icons on iOS/iPadOS home screen
 - Custom 404 page
 
 ## [2025.2.2] - 2025/02/02
