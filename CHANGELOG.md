@@ -7,9 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025.3.1] - 2025/03/11
+
 ### Added
 
+- Steam links
 - Sitemap
+- 87 new album references (897 total)
 
 ### Improved
 
