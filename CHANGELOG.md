@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2025.5.1] - 2025/05/11
 
+### Added
+
+- 150 new album references (1548 total)
+
 ### Changed
 
 - Featured album is not handled from the BlueSky feed
