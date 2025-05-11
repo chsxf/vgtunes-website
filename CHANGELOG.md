@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025.5.1] - 2025/05/11
+
+### Changed
+
+- Featured album is not handled from the BlueSky feed
+
 ## [2025.4.1] - 2025/04/28
 
 ### Added
