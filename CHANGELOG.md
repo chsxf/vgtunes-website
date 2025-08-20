@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2025.8.1] - 2025/05/21
+
+### Added
+
+- TIDAL support
+- 282 new album references (1830 total)
+
 ## [2025.5.1] - 2025/05/11
 
 ### Added
